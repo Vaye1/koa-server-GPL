@@ -12,7 +12,6 @@ class UserController extends ControllerBase {
 	 */
 	async signup(data) {
 		//console.log("imei",data.imei)
-		//console.log("imei",data.imei)
 		//console.log("number",data.number)
 
 		//var imei = document.getElementById("textIMEI").value;
