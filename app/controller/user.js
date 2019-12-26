@@ -15,7 +15,7 @@ class UserController extends ControllerBase {
 // 		this.checkKeyExists(data, 'phoneNumber');
 		// template.error.call(this,'sqlerror');
 		// this.error(123,"aaaa");
-		return {result:2};
+		return {result:3};
 	}
 
 }
