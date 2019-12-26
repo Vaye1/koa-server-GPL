@@ -9,7 +9,7 @@
  */
 require('babel-register')
 const Koa = require('koa')
-// const cors = require('@koa/cors');
+const cors = require('@koa/cors');
 const chalk = require('chalk')
 const logger = require('koa-logger')
 const session = require('koa-session')
@@ -23,7 +23,7 @@ const provider = require('./config/provider')
 //使用路由转发请求
 const router = require('./router/router')()
 
-// app.use(cors())
+app.use(cors())
 app.use(bodyParser())
 app.use(router.routes())
 
