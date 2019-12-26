@@ -11,5 +11,5 @@ jobs:
         WORKDIR: /root/cyy_testAPI/test/koa-server-GPL
         PM2_ID: 1
       run: |
-        cd $WORKDIR && git pull 
+        cd $WORKDIR && git pull && pm2 restart app
 # && pm2 restart $PM2_ID
