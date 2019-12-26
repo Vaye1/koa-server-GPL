@@ -16,8 +16,8 @@ const bodyParser = require('koa-bodyparser')
 const app = new Koa()
 const config = require('./config/config')
 const provider = require('./config/provider')
-let Mysql=require('./core/DB/Mysql/MysqlBase');
-new Mysql(config,provider)
+// let Mysql=require('./core/DB/Mysql/MysqlBase');
+// new Mysql(config,provider)
 
 //使用路由转发请求
 const router = require('./router/router')()
