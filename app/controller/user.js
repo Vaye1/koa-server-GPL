@@ -12,7 +12,7 @@ class UserController extends ControllerBase {
 	 */
 	async signup(data) {
 		console.log(data)
-		this.checkKeyExists(data, 'phoneNumber');
+// 		this.checkKeyExists(data, 'phoneNumber');
 		// template.error.call(this,'sqlerror');
 		// this.error(123,"aaaa");
 		return true;
