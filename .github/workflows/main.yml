@@ -8,7 +8,7 @@ jobs:
     steps:
     - name: Print a greeting
       env:
-        WORKDIR: /root/cyy_testAPI/test
+        WORKDIR: /root/cyy_testAPI/test/koa-server-GPL
         PM2_ID: 1
       run: |
         cd $WORKDIR && git pull 
