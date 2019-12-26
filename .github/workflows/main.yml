@@ -1,0 +1,15 @@
+name: Greeting from Mona
+on: push
+
+jobs:
+  my-job:
+    name: My Test
+    runs-on: self-hosted
+    steps:
+    - name: Print a greeting
+      env:
+        WORKDIR: /root/cyy_testAPI/test
+        PM2_ID: 1
+      run: |
+        cd $WORKDIR && git pull 
+# && pm2 restart $PM2_ID
