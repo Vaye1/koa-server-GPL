@@ -23,6 +23,7 @@ const provider = require('./config/provider')
 //使用路由转发请求
 const router = require('./router/router')()
 
+//跨域处理
 app.use(cors())
 app.use(bodyParser())
 app.use(router.routes())
