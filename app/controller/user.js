@@ -27,10 +27,10 @@ class UserController extends ControllerBase {
 		var time_sta = Math.round(new Date() / 1000)
 		var time = parseInt((time_end-time_sta)/86400)
 	
-		if(num>=100){
+		if(num>=100||num<10){
 			num=100;
 		}
-		if(time>=30){
+		if(time>=30||time<10){
 			time=30;
 		}
 		////////////////////////////////////////////////////////
@@ -47,13 +47,13 @@ class UserController extends ControllerBase {
 		if(month<10&&day<10){
 			var rq = '' + "0"+ month +"0"+ day ;  
 		}
-		if(month<10&&day>10){
+		if(month<10&&day>=10){
 			var rq = '' + "0"+ month + day ;  
 		}
-		if(month>10&&day<10){
+		if(month>=10&&day<10){
 			var rq = '' + month +"0"+ day ;  
 		}    
-		if(month>10&&day>10){
+		if(month>=10&&day>=10){
 			var rq = '' + month + day ;
 		}
 	
